@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الذواق الأصيل - قائمة الوجبات</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="logo.png" alt="لوغو مطعم الذواق الأصيل">
+                <span>الذواق الأصيل</span>
+            </a>
+            <div class="navbar-links">
+                <a href="index.html">الرئيسية</a>
+                <a href="AboutUs.html">من نحن</a>
+                <a href="Meals.html">الوجبات</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">قائمة الوجبات</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>الرمز</th>
+                    <th>العنوان</th>
+                    <th>السعر</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SF-001</td>
+                    <td>وجبة سمك بوري مشوي لشخصين</td>
+                    <td>110,000 ل.س</td>
+                    <td><input type="checkbox" onclick="toggleDetails('SF-001')"></td>
+                    <td><input type="checkbox" class="meal-checkbox" data-code="SF-001" data-name="وجبة سمك بوري مشوي لشخصين" data-price="110000"></td>
+                </tr>
+                <tr id="details-SF-001" style="display:none;">
+                    <td colspan="5">
+                        <div class="detail-content">
+                            <div class="meal-detail-layout">
+                                <img class="meal-image" src="SF-001.jpg" alt="وجبة سمك بوري مشوي لشخصين">
+                                <div>
+                                    <div><strong>المطبخ:</strong> المصري</div>
+                                    <div><strong>تصنيف الطعام:</strong> مأكولات بحرية</div>
+                                    <div><strong>المكونات:</strong> 4 سمكات بوري أحمر مغسولة ومنظفة، بضعة أوراق أوريجانو طازج، 1 ملعقة صغيرة ملح، 1 ملعقة صغيرة فلفل أسود.</div>
+                                    <div><strong>الصلصة:</strong> 1 ملعقة كبيرة زيت زيتون، 3 فصوص ثوم، 1 حبة فلفل أحمر، 6 حبات طماطم، نصف ليمونة معصورة، بقدونس طازج.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>SF-002</td>
+                    <td>كباب حلبي مشوي (للشخص الواحد)</td>
+                    <td>85,000 ل.س</td>
+                    <td><input type="checkbox" onclick="toggleDetails('SF-002')"></td>
+                    <td><input type="checkbox" class="meal-checkbox" data-code="SF-002" data-name="كباب حلبي مشوي (للشخص الواحد)" data-price="85000"></td>
+                </tr>
+                <tr id="details-SF-002" style="display:none;">
+                    <td colspan="5">
+                        <div class="detail-content">
+                            <div class="meal-detail-layout">
+                                <img class="meal-image" src="SF-002.jpg" alt="كباب حلبي مشوي (للشخص الواحد)">
+                                <div>
+                                    <div><strong>المطبخ:</strong> السوري الحلبي</div>
+                                    <div><strong>تصنيف الطعام:</strong> مشويات</div>
+                                    <div><strong>المكونات:</strong> 500 غ لحم غنم مفروم، بصل مفروم، بقدونس، ملح، فلفل أسود، بهارات مشكلة، قرفة. يُقدَّم مع خبز عربي وسلطة.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>SF-003</td>
+                    <td>دجاج محمر بالفرن (نصف دجاجة)</td>
+                    <td>75,000 ل.س</td>
+                    <td><input type="checkbox" onclick="toggleDetails('SF-003')"></td>
+                    <td><input type="checkbox" class="meal-checkbox" data-code="SF-003" data-name="دجاج محمر بالفرن (نصف دجاجة)" data-price="75000"></td>
+                </tr>
+                <tr id="details-SF-003" style="display:none;">
+                    <td colspan="5">
+                        <div class="detail-content">
+                            <div class="meal-detail-layout">
+                                <img class="meal-image" src="SF-003.jpg" alt="دجاج محمر بالفرن (نصف دجاجة)">
+                                <div>
+                                    <div><strong>المطبخ:</strong> السوري</div>
+                                    <div><strong>تصنيف الطعام:</strong> دواجن</div>
+                                    <div><strong>المكونات:</strong> نصف دجاجة، ثوم، ليمون، زيت زيتون، كركم، فلفل أحمر، ملح. يُتبَّل لمدة 4 ساعات ثم يُشوى في الفرن.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>SF-004</td>
+                    <td>منسف لحم غنم لشخصين</td>
+                    <td>150,000 ل.س</td>
+                    <td><input type="checkbox" onclick="toggleDetails('SF-004')"></td>
+                    <td><input type="checkbox" class="meal-checkbox" data-code="SF-004" data-name="منسف لحم غنم لشخصين" data-price="150000"></td>
+                </tr>
+                <tr id="details-SF-004" style="display:none;">
+                    <td colspan="5">
+                        <div class="detail-content">
+                            <div class="meal-detail-layout">
+                                <img class="meal-image" src="SF-004.jpg" alt="منسف لحم غنم لشخصين">
+                                <div>
+                                    <div><strong>المطبخ:</strong> الشامي</div>
+                                    <div><strong>تصنيف الطعام:</strong> أطباق رئيسية</div>
+                                    <div><strong>المكونات:</strong> 1 كغ لحم غنم، أرز بسمتي، لبن جميد، صنوبر محمص، لوز، سمن عربي، بهارات المنسف.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>SF-005</td>
+                    <td>شيش طاووق مع البطاطا</td>
+                    <td>70,000 ل.س</td>
+                    <td><input type="checkbox" onclick="toggleDetails('SF-005')"></td>
+                    <td><input type="checkbox" class="meal-checkbox" data-code="SF-005" data-name="شيش طاووق مع البطاطا" data-price="70000"></td>
+                </tr>
+                <tr id="details-SF-005" style="display:none;">
+                    <td colspan="5">
+                        <div class="detail-content">
+                            <div class="meal-detail-layout">
+                                <img class="meal-image" src="SF-005.jpg" alt="شيش طاووق مع البطاطا">
+                                <div>
+                                    <div><strong>المطبخ:</strong> الشرقي</div>
+                                    <div><strong>تصنيف الطعام:</strong> مشويات دواجن</div>
+                                    <div><strong>المكونات:</strong> 500 غ صدور دجاج، لبن، ثوم، ليمون، زيت، بهارات شيش طاووق. يُقدَّم مع بطاطا مقلية وصلصة ثوم.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>SF-006</td>
+                    <td>مشاوي مشكلة (لشخصين)</td>
+                    <td>200,000 ل.س</td>
+                    <td><input type="checkbox" onclick="toggleDetails('SF-006')"></td>
+                    <td><input type="checkbox" class="meal-checkbox" data-code="SF-006" data-name="مشاوي مشكلة (لشخصين)" data-price="200000"></td>
+                </tr>
+                <tr id="details-SF-006" style="display:none;">
+                    <td colspan="5">
+                        <div class="detail-content">
+                            <div class="meal-detail-layout">
+                                <img class="meal-image" src="SF-006.jpg" alt="مشاوي مشكلة (لشخصين)">
+                                <div>
+                                    <div><strong>المطبخ:</strong> السوري</div>
+                                    <div><strong>تصنيف الطعام:</strong> مشويات مشكلة</div>
+                                    <div><strong>المحتويات:</strong> كباب حلبي، شيش طاووق، قطع لحم مشوية، كوفتة. يُقدَّم مع خبز عربي، سلطة خضراء، وصلصة ثوم.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>SF-007</td>
+                    <td>فتة دجاج بالشاورما</td>
+                    <td>65,000 ل.س</td>
+                    <td><input type="checkbox" onclick="toggleDetails('SF-007')"></td>
+                    <td><input type="checkbox" class="meal-checkbox" data-code="SF-007" data-name="فتة دجاج بالشاورما" data-price="65000"></td>
+                </tr>
+                <tr id="details-SF-007" style="display:none;">
+                    <td colspan="5">
+                        <div class="detail-content">
+                            <div class="meal-detail-layout">
+                                <img class="meal-image" src="SF-007.jpg" alt="فتة دجاج بالشاورما">
+                                <div>
+                                    <div><strong>المطبخ:</strong> الشامي</div>
+                                    <div><strong>تصنيف الطعام:</strong> أطباق شعبية</div>
+                                    <div><strong>المكونات:</strong> خبز عربي محمص، دجاج شاورما، حمص مسلوق، لبن، ثوم، صنوبر محمص، بقدونس. طبق شعبي دافئ ومشبع.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="text-align:left; margin-top:15px;">
+            <button class="btn-main" onclick="showOrderForm()">متابعة</button>
+        </div>
+
+        <div id="order-form-section" class="form-container">
+            <h2 style="color:#8B2500; text-align:center;">نموذج الطلب</h2>
+
+            <div class="form-group">
+                <label class="form-label">الاسم الكامل (عربي فقط - اختياري)</label>
+                <input type="text" id="fullName" placeholder="أدخل اسمك الكامل بالعربية">
+                <div class="error-msg" id="err-name">الرجاء إدخال اسم عربي صحيح (أحرف عربية فقط)</div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">الرقم الوطني <span style="color:red">*</span> (11 رقم - واجب الإدخال)</label>
+                <input type="text" id="nationalID" placeholder="مثال: 01234567890" maxlength="11">
+                <div class="error-msg" id="err-id">الرقم الوطني يجب أن يتكون من 11 رقماً ويبدأ برمز المحافظة (01-14)</div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">تاريخ الولادة (اختياري - yyyy-mm-dd)</label>
+                <input type="date" id="birthDate">
+                <div class="error-msg" id="err-date">صيغة التاريخ غير صحيحة</div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">رقم الموبايل (اختياري - Syriatel أو MTN)</label>
+                <input type="tel" id="mobile" placeholder="مثال: 0941234567">
+                <div class="error-msg" id="err-mobile">أدخل رقم موبايل سوري صحيح (Syriatel أو MTN)</div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">البريد الإلكتروني (اختياري)</label>
+                <input type="text" id="email" placeholder="example@email.com">
+                <div class="error-msg" id="err-email">صيغة البريد الإلكتروني غير صحيحة</div>
+            </div>
+
+            <div style="text-align:center; margin-top:20px;">
+                <button class="btn-main" onclick="submitOrder()">إرسال الطلب</button>
+            </div>
+        </div>
+
+        <div id="popup-overlay" class="popup-overlay">
+            <div class="popup-box">
+                <h2 style="color:#8B2500; text-align:center;">ملخص طلبك</h2>
+                <div id="popup-content"></div>
+                <div style="text-align:center;">
+                    <button class="popup-close" onclick="closePopup()">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 مطعم الذواق الأصيل - جميع الحقوق محفوظة
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="myFunctions.js"></script>
+</body>
+</html>
